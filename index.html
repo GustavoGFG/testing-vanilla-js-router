@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <meta http-equiv="refresh" content="0;url=" /> -->
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vanilla Js Router</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav id="main-nav" class="sidebar">
+        <a href="/" onclick="route()">Home</a>
+        <a href="/about" onclick="route()">About</a>
+        <a href="/lorem" onclick="route()">Lorem</a>
+        <a href="/product?id=1" onclick="route()">Product 1</a>
+        <a href="/product?id=2" onclick="route()">Product 2</a>
+        <a href="/product?id=20" onclick="route()">Product 20</a>
+        <a href="/user" onclick="route()">User</a>
+      </nav>
+      <div id="main-page"></div>
+    </div>
+
+    <script src="./src/js/productData.js"></script>
+    <script src="./router.js" type="module"></script>
+    <!-- <script src="./src/js/changeProductPageContent.js"></script> -->
+  </body>
+</html>
